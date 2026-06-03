@@ -1,0 +1,282 @@
+body {
+	font-family: "Poiret One", sans-serif;
+	font-weight: bolder;
+	margin: 0;
+	padding: 0;
+	height: 2500px;
+	background-color: rgb(227, 223, 212);
+}
+
+.navbar {
+	display: flex;
+	align-items: center;
+	background: white;
+	justify-content: space-between;
+	z-index: 999;
+
+	padding: 10px 20px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	height: 70px;
+	background-color: rgb(225, 224, 209);
+	position: fixed;
+	right: 0;
+	top: 0;
+	left: 0;
+}
+.first-section {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	height: 70px;
+}
+
+.logo-img {
+	height: 180px;
+	padding-top: 10px;
+}
+
+.menu {
+	list-style: none;
+	display: flex;
+	gap: 35px;
+}
+.menu li {
+	display: inline;
+}
+.menu a {
+	text-decoration: none;
+	color: black;
+	font-weight: bolder;
+	font-size: 1.8em;
+	padding: 8px 8px 8px 8px;
+	border-radius: 6px;
+}
+.menu a:hover {
+	background-color: rgb(255, 255, 255);
+	transition: 1s;
+}
+.input_btn_main {
+	width: 20%;
+	display: flex;
+	background-color: #ffffff;
+	border-radius: 80px;
+	padding: 8px 0px;
+	margin: 0 auto;
+	border: none;
+}
+input::placeholder {
+	font-family: "Poiret One", sans-serif;
+	font-weight: bold;
+}
+
+.button {
+	width: 100%;
+	float: left;
+	font-size: 18px;
+	color: #2b2c2c;
+	background-color: #ffffff;
+	height: auto;
+	padding: 5px 20px;
+	border-radius: 20px;
+	border: none;
+	outline: none;
+}
+
+.search_bt a {
+	width: 50px;
+	float: left;
+	font-size: 24px;
+	color: #000000;
+	background-color: transparent;
+	padding: 5px 0px 5px 8px;
+	text-align: center;
+	font-weight: bolder;
+	text-decoration: none;
+}
+
+.hamburger {
+	display: none;
+	cursor: pointer;
+}
+.hamburger div {
+	width: 25px;
+	height: 3px;
+	background-color: white;
+	margin: 5px;
+	transition: 0.4s;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+	.menu {
+		display: none;
+		width: 100%;
+		text-align: center;
+		position: absolute;
+		background-color: #333;
+		top: 60px;
+		left: 0;
+	}
+	.menu li {
+		margin: 15px 0;
+	}
+	.hamburger {
+		display: block;
+	}
+	.hamburger.active div:nth-child(1) {
+		transform: rotate(-45deg) translate(-5px, 6px);
+	}
+	.hamburger.active div:nth-child(2) {
+		opacity: 0;
+	}
+	.hamburger.active div:nth-child(3) {
+		transform: rotate(45deg) translate(-5px, -6px);
+	}
+	.menu.active {
+		display: block;
+	}
+	.input_btn_main {
+		width: 100%;
+		margin-top: 10px;
+	}
+	.input_btn_main input {
+		width: 80%;
+	}
+}
+.container {
+	display: grid;
+	grid-template-columns: 1fr;
+	position: relative;
+	top: 130px;
+	row-gap: 100px;
+}
+.welcome {
+	text-align: center;
+	margin-left: -500px;
+	position: sticky;
+	top: 90px;
+	background-color: rgb(227, 223, 212);
+	padding-bottom: 20px;
+	padding-top: 20px;
+	color: black;
+	font-size: 3.5em;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	z-index: 100;
+}
+
+.container2 {
+	display: grid;
+	grid-template-columns: 1fr 400px;
+	column-gap: 60px;
+	row-gap: 40px;
+}
+
+.img {
+	height: 170px;
+	width: 250px;
+}
+/* Container */
+.Reservation {
+	background: rgb(236, 232, 225);
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.3);
+	width: 300px;
+	height: 720px;
+	text-align: center;
+	position: sticky;
+	left: 83%;
+	top: 20%;
+}
+
+/* Form Styling */
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+input {
+	width: 93%;
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	outline: none;
+	font-family: "Poiret One", sans-serif;
+	font-weight: bolder;
+	font-size: 1em;
+}
+
+/* Button */
+button {
+	background-color: rgb(211, 205, 193);
+	color: black;
+	font-family: "Poiret One", sans-serif;
+	font-weight: bolder;
+	font-size: 1.2em;
+	padding: 10px;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: rgb(188, 187, 174);
+}
+
+.Reservation select {
+	width: 100%;
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	outline: none;
+	font-family: "Poiret One", sans-serif;
+	font-weight: bolder;
+	font-size: 1em;
+}
+.Reservation select::placeholder {
+	font-family: "Poiret One", sans-serif;
+	font-weight: bolder;
+	font-size: 2em;
+}
+
+.descrition h2 {
+	text-align: center;
+}
+.destinations,
+.activities,
+.restorant,
+.hotel {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 20px;
+}
+
+.card {
+	background: rgb(236, 232, 225);
+	padding: 15px;
+	border-radius: 10px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+
+.card img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 10px;
+}
+
+.price {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	border-top: 1px solid rgb(100, 70, 70);
+}
+.price h5 {
+	font-size: 1.1em;
+}
