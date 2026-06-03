@@ -1,0 +1,72 @@
+C:\Users\BetaTech\Desktop\PROJEKT FINAL\TourismApi\bin\Debug\net9.0\TourismApi.exe
+C:\Users\BetaTech\Desktop\PROJEKT FINAL\TourismApi\bin\Debug\net9.0\TourismApi.dll
+C:\Users\BetaTech\Desktop\PROJEKT FINAL\TourismApi\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\BetaTech\Desktop\PROJEKT FINAL\TourismApi\bin\Debug\net9.0\Microsoft.OpenApi.dll
+C:\Users\BetaTech\Desktop\PROJEKT FINAL\TourismApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\BetaTech\Desktop\PROJEKT FINAL\TourismApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\BetaTech\Desktop\PROJEKT FINAL\TourismApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\BetaTech\Desktop\PROJEKT FINAL\TourismApi\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\BetaTech\Desktop\PROJEKT FINAL\TourismApi\bin\Debug\net9.0\appsettings.json
+C:\Users\BetaTech\Desktop\PROJEKT FINAL\TourismApi\bin\Debug\net9.0\TourismApi.staticwebassets.endpoints.json
+C:\Users\BetaTech\Desktop\PROJEKT FINAL\TourismApi\obj\Debug\net9.0\TourismApi.csproj.AssemblyReference.cache
+C:\Users\BetaTech\Desktop\PROJEKT FINAL\TourismApi\obj\Debug\net9.0\TourismApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\BetaTech\Desktop\PROJEKT FINAL\TourismApi\obj\Debug\net9.0\TourismApi.AssemblyInfoInputs.cache
+C:\Users\BetaTech\Desktop\PROJEKT FINAL\TourismApi\obj\Debug\net9.0\TourismApi.AssemblyInfo.cs
+C:\Users\BetaTech\Desktop\PROJEKT FINAL\TourismApi\obj\Debug\net9.0\TourismApi.csproj.CoreCompileInputs.cache
+C:\Users\BetaTech\Desktop\PROJEKT FINAL\TourismApi\obj\Debug\net9.0\TourismApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\BetaTech\Desktop\PROJEKT FINAL\TourismApi\obj\Debug\net9.0\TourismApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\BetaTech\Desktop\PROJEKT FINAL\TourismApi\obj\Debug\net9.0\scopedcss\bundle\TourismApi.styles.css
+C:\Users\BetaTech\Desktop\PROJEKT FINAL\TourismApi\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\BetaTech\Desktop\PROJEKT FINAL\TourismApi\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\BetaTech\Desktop\PROJEKT FINAL\TourismApi\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\BetaTech\Desktop\PROJEKT FINAL\TourismApi\obj\Debug\net9.0\staticwebassets\msbuild.TourismApi.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\BetaTech\Desktop\PROJEKT FINAL\TourismApi\obj\Debug\net9.0\staticwebassets\msbuild.TourismApi.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\BetaTech\Desktop\PROJEKT FINAL\TourismApi\obj\Debug\net9.0\staticwebassets\msbuild.build.TourismApi.props
+C:\Users\BetaTech\Desktop\PROJEKT FINAL\TourismApi\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.TourismApi.props
+C:\Users\BetaTech\Desktop\PROJEKT FINAL\TourismApi\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.TourismApi.props
+C:\Users\BetaTech\Desktop\PROJEKT FINAL\TourismApi\obj\Debug\net9.0\staticwebassets.pack.json
+C:\Users\BetaTech\Desktop\PROJEKT FINAL\TourismApi\obj\Debug\net9.0\TourismApi.csproj.Up2Date
+C:\Users\BetaTech\Desktop\PROJEKT FINAL\TourismApi\obj\Debug\net9.0\TourismApi.dll
+C:\Users\BetaTech\Desktop\PROJEKT FINAL\TourismApi\obj\Debug\net9.0\refint\TourismApi.dll
+C:\Users\BetaTech\Desktop\PROJEKT FINAL\TourismApi\obj\Debug\net9.0\TourismApi.pdb
+C:\Users\BetaTech\Desktop\PROJEKT FINAL\TourismApi\bin\Debug\net9.0\TourismApi.deps.json
+C:\Users\BetaTech\Desktop\PROJEKT FINAL\TourismApi\bin\Debug\net9.0\TourismApi.runtimeconfig.json
+C:\Users\BetaTech\Desktop\PROJEKT FINAL\TourismApi\bin\Debug\net9.0\TourismApi.pdb
+C:\Users\BetaTech\Desktop\PROJEKT FINAL\TourismApi\obj\Debug\net9.0\TourismApi.genruntimeconfig.cache
+C:\Users\BetaTech\Desktop\PROJEKT FINAL\TourismApi\obj\Debug\net9.0\ref\TourismApi.dll
+C:\Users\BetaTech\Desktop\TourismGuideAsia\TourismApi\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\BetaTech\Desktop\TourismGuideAsia\TourismApi\bin\Debug\net9.0\appsettings.json
+C:\Users\BetaTech\Desktop\TourismGuideAsia\TourismApi\bin\Debug\net9.0\TourismApi.staticwebassets.endpoints.json
+C:\Users\BetaTech\Desktop\TourismGuideAsia\TourismApi\bin\Debug\net9.0\TourismApi.exe
+C:\Users\BetaTech\Desktop\TourismGuideAsia\TourismApi\bin\Debug\net9.0\TourismApi.deps.json
+C:\Users\BetaTech\Desktop\TourismGuideAsia\TourismApi\bin\Debug\net9.0\TourismApi.runtimeconfig.json
+C:\Users\BetaTech\Desktop\TourismGuideAsia\TourismApi\bin\Debug\net9.0\TourismApi.dll
+C:\Users\BetaTech\Desktop\TourismGuideAsia\TourismApi\bin\Debug\net9.0\TourismApi.pdb
+C:\Users\BetaTech\Desktop\TourismGuideAsia\TourismApi\bin\Debug\net9.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\BetaTech\Desktop\TourismGuideAsia\TourismApi\bin\Debug\net9.0\Microsoft.OpenApi.dll
+C:\Users\BetaTech\Desktop\TourismGuideAsia\TourismApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\BetaTech\Desktop\TourismGuideAsia\TourismApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\BetaTech\Desktop\TourismGuideAsia\TourismApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\BetaTech\Desktop\TourismGuideAsia\TourismApi\obj\Debug\net9.0\TourismApi.csproj.AssemblyReference.cache
+C:\Users\BetaTech\Desktop\TourismGuideAsia\TourismApi\obj\Debug\net9.0\TourismApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\BetaTech\Desktop\TourismGuideAsia\TourismApi\obj\Debug\net9.0\TourismApi.AssemblyInfoInputs.cache
+C:\Users\BetaTech\Desktop\TourismGuideAsia\TourismApi\obj\Debug\net9.0\TourismApi.AssemblyInfo.cs
+C:\Users\BetaTech\Desktop\TourismGuideAsia\TourismApi\obj\Debug\net9.0\TourismApi.csproj.CoreCompileInputs.cache
+C:\Users\BetaTech\Desktop\TourismGuideAsia\TourismApi\obj\Debug\net9.0\TourismApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\BetaTech\Desktop\TourismGuideAsia\TourismApi\obj\Debug\net9.0\TourismApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\BetaTech\Desktop\TourismGuideAsia\TourismApi\obj\Debug\net9.0\scopedcss\bundle\TourismApi.styles.css
+C:\Users\BetaTech\Desktop\TourismGuideAsia\TourismApi\obj\Debug\net9.0\staticwebassets.build.json
+C:\Users\BetaTech\Desktop\TourismGuideAsia\TourismApi\obj\Debug\net9.0\staticwebassets.development.json
+C:\Users\BetaTech\Desktop\TourismGuideAsia\TourismApi\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+C:\Users\BetaTech\Desktop\TourismGuideAsia\TourismApi\obj\Debug\net9.0\staticwebassets\msbuild.TourismApi.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\BetaTech\Desktop\TourismGuideAsia\TourismApi\obj\Debug\net9.0\staticwebassets\msbuild.TourismApi.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\BetaTech\Desktop\TourismGuideAsia\TourismApi\obj\Debug\net9.0\staticwebassets\msbuild.build.TourismApi.props
+C:\Users\BetaTech\Desktop\TourismGuideAsia\TourismApi\obj\Debug\net9.0\staticwebassets\msbuild.buildMultiTargeting.TourismApi.props
+C:\Users\BetaTech\Desktop\TourismGuideAsia\TourismApi\obj\Debug\net9.0\staticwebassets\msbuild.buildTransitive.TourismApi.props
+C:\Users\BetaTech\Desktop\TourismGuideAsia\TourismApi\obj\Debug\net9.0\staticwebassets.pack.json
+C:\Users\BetaTech\Desktop\TourismGuideAsia\TourismApi\obj\Debug\net9.0\TourismApi.csproj.Up2Date
+C:\Users\BetaTech\Desktop\TourismGuideAsia\TourismApi\obj\Debug\net9.0\TourismApi.dll
+C:\Users\BetaTech\Desktop\TourismGuideAsia\TourismApi\obj\Debug\net9.0\refint\TourismApi.dll
+C:\Users\BetaTech\Desktop\TourismGuideAsia\TourismApi\obj\Debug\net9.0\TourismApi.pdb
+C:\Users\BetaTech\Desktop\TourismGuideAsia\TourismApi\obj\Debug\net9.0\TourismApi.genruntimeconfig.cache
+C:\Users\BetaTech\Desktop\TourismGuideAsia\TourismApi\obj\Debug\net9.0\ref\TourismApi.dll

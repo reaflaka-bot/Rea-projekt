@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "wpN9dLFQHVPM4Q1yaX76yHwAOoJ1S14dVGsPTTHqWQU=",
+  "Source": "TourismApi",
+  "BasePath": "_content/TourismApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
