@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Guide Tour</title>
+		<link
+			rel="stylesheet"
+			href="/css/Home.css" />
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com" />
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Courgette&family=Poiret+One&display=swap"
+			rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+	</head>
+	<body>
+		<nav class="navbar">
+			<div class="first-section">
+				<div class="logo">
+					<img
+						class="logo-img"
+						src="/Logo/Asia-logo.png"
+						alt="Logo" />
+				</div>
+
+				<div
+					class="hamburger"
+					onclick="toggleMenu()">
+					☰
+				</div>
+
+				<ul
+					class="menu"
+					id="menu">
+					<li><a href="Home.html">Home</a></li>
+					<li><a href="About.html">About</a></li>
+					<li><a href="#Contact">Contact</a></li>
+				</ul>
+			</div>
+
+			<div
+				class="input_btn_main"
+				id="searchBar">
+				<input
+					type="text"
+					class="button"
+					placeholder="Search for a place..."
+					name="searchQuery"
+					id="searchQuery" />
+				<span class="search_bt"
+					><a
+						href="javascript:void(0);"
+						onclick="searchPage()"
+						><i class="fas fa-search"></i></a
+				></span>
+			</div>
+
+			<div
+				class="search-icon"
+				onclick="toggleSearch()">
+				<i class="fas fa-search"></i>
+			</div>
+
+			<div
+				class="profile-section"
+				id="profileSection">
+				<img
+					src="/image/default-profile.png"
+					alt="Profile"
+					class="profile-pic"
+					id="profilePic"
+					onclick="openProfileModal()" />
+			</div>
+		</nav>
+
+		<div
+			class="profile-modal"
+			id="profileModal">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h2>User Profile</h2>
+					<span
+						class="close"
+						onclick="closeProfileModal()"
+						>&times;</span
+					>
+				</div>
+				<div class="profile-details">
+					<img
+						id="modalProfilePic"
+						src="/image/default-profile.png"
+						style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin: 0 auto; display: block" />
+					<p><strong>Name:</strong> <span id="modalName"></span></p>
+					<p><strong>Email:</strong> <span id="modalEmail"></span></p>
+					<p><strong>Bio:</strong></p>
+					<textarea
+						id="modalBio"
+						placeholder="Write your bio..."></textarea>
+					<input
+						type="file"
+						id="imageUpload"
+						accept="image/*"
+						onchange="previewProfileImage(event)" />
+					<button
+						class="upload-btn"
+						onclick="document.getElementById('imageUpload').click()">
+						Change Photo
+					</button>
+					<button
+						class="upload-btn"
+						onclick="saveProfileChanges()">
+						Save Changes
+					</button>
+					<button
+						class="upload-btn"
+						style="background-color: #e74c3c"
+						onclick="logout()">
+						Logout
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<section
+			class="popular-tours"
+			id="tours">
+			<h1>Our Guide Introduction</h1>
+			<div class="tour-grid">
+				<div class="tour">
+					<img
+						src="/image/Philippines1.png"
+						alt="Tour 1" />
+					<h3>Philippines</h3>
+					<p>“Where every island holds a new adventure and every sunset feels like home.”</p>
+				</div>
+				<div class="tour">
+					<img
+						src="/image/Maldive1.png"
+						alt="Tour 2" />
+					<h3>Maldives</h3>
+					<p>“Where the sky meets the sea, and time slows to the rhythm of the waves.”</p>
+				</div>
+				<div class="tour">
+					<img
+						src="/image/Qatar1.png"
+						alt="Tour 3" />
+					<h3>Qatar</h3>
+					<p>“A jewel of the Gulf, where culture, luxury, and tradition shine together.”</p>
+				</div>
+			</div>
+		</section>
+		<section class="testimonials">
+			<h2>What Our Guests Are Saying</h2>
+			<div class="testimonial-grid">
+				<div class="testimonial">
+					<p>"Amazing experience. The guide was so knowledgeable."</p>
+					<p>- Jane Doe</p>
+				</div>
+				<div class="testimonial">
+					<p>"Every moment was a thrill—can't wait for the next adventure."</p>
+					<p>- Klevi Duraku</p>
+				</div>
+				<div class="testimonial">
+					<p>"The adventure of a lifetime, with memories to last forever."</p>
+					<p>- Nadire Rrushi</p>
+				</div>
+				<div class="testimonial">
+					<p>"So many surprises, so much to explore! Truly a once-in-a-lifetime experience."</p>
+					<p>- Sibora Osmrija</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="why-choose-us">
+			<ul>
+				<li><h2>Why Choose Us</h2></li>
+				<li>
+					"Your Adventure, Our Expertise."<br />
+					Let us lead the way to unforgettable experiences with personalized tours tailored to your interests.
+				</li>
+				<li>
+					"Explore with Experts."<br />
+					Experience the destination like never before with our knowledgeable and passionate guides.
+				</li>
+				<li>
+					"Knowledge, Passion, and Adventure Await."<br />
+					With us, every tour is an opportunity to learn, explore, and create lasting memories.
+				</li>
+			</ul>
+		</section>
+
+		<footer id="Contact">
+			<div class="location_main">
+				<div class="call_text"><img src="/image-social/call-icon.png" /></div>
+				<div class="call_text"><a href="#">Call +01 1234567890</a></div>
+				<div class="call_text"><img src="/image-social/mail-icon.png" /></div>
+				<div class="call_text"><a href="#">tourismasia@gmail.com</a></div>
+			</div>
+
+			<div class="social_icon">
+				<h2>Follow us:</h2>
+				<ul>
+					<li>
+						<a href="#"><img src="/image-social/fb-icon.png" /></a>
+					</li>
+					<li>
+						<a href="#"><img src="/image-social/twitter-icon.png" /></a>
+					</li>
+					<li>
+						<a href="#"><img src="/image-social/linkedin-icon.png" /></a>
+					</li>
+					<li>
+						<a href="#"><img src="/image-social/instagram-icon.png" /></a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+
+		<script>
+			function toggleMenu() {
+				const menu = document.getElementById("menu");
+				menu.classList.toggle("active");
+			}
+
+			function toggleSearch() {
+				const searchBar = document.getElementById("searchBar");
+				searchBar.classList.toggle("active");
+			}
+
+			function searchPage() {
+				const query = document.getElementById("searchQuery").value;
+				if (query) {
+					alert("Search for: " + query);
+				}
+			}
+
+			function openProfileModal() {
+				document.getElementById("modalName").textContent = localStorage.getItem("userName") || "Unknown";
+				document.getElementById("modalEmail").textContent = localStorage.getItem("userEmail") || "Unknown";
+				document.getElementById("modalBio").value = localStorage.getItem("userBio") || "";
+				document.getElementById("modalProfilePic").src = localStorage.getItem("userImage") || "/image/default-profile.png";
+				document.getElementById("profileModal").style.display = "flex";
+			}
+
+			function closeProfileModal() {
+				document.getElementById("profileModal").style.display = "none";
+			}
+
+			function previewProfileImage(event) {
+				const reader = new FileReader();
+				reader.onload = function () {
+					const dataURL = reader.result;
+					document.getElementById("profilePic").src = dataURL;
+					document.getElementById("modalProfilePic").src = dataURL;
+					localStorage.setItem("userImage", dataURL);
+				};
+				reader.readAsDataURL(event.target.files[0]);
+			}
+
+			function saveProfileChanges() {
+				const newBio = document.getElementById("modalBio").value;
+				localStorage.setItem("userBio", newBio);
+				alert("Profile updated!");
+				closeProfileModal();
+			}
+
+			function logout() {
+				localStorage.removeItem("userName");
+				localStorage.removeItem("userEmail");
+				localStorage.removeItem("userImage");
+				localStorage.removeItem("userBio");
+				alert("You have been logged out.");
+				window.location.href = "login.html";
+			}
+
+			window.onload = function () {
+				const name = localStorage.getItem("userName");
+				const email = localStorage.getItem("userEmail");
+				const image = localStorage.getItem("userImage");
+
+				if (name && email) {
+					document.getElementById("profileSection").style.display = "inline-block";
+					document.getElementById("profilePic").src = image || "/image/default-profile.png";
+				} else {
+					document.getElementById("profileSection").style.display = "none";
+				}
+			};
+		</script>
+		<script src="/js/home-about.js"></script>
+	</body>
+</html>

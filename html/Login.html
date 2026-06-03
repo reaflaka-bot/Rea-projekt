@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in for the Best Experience</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="/css/login.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div class="container-box active" id="login-form">
+        <h2>Login</h2>
+        <div class="input-box">
+            <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+            <input type="text" id="login-user" required placeholder=" ">
+            <label>Name</label>
+        </div>
+        <div class="input-box">
+            <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+            <input type="password" id="login-password" required placeholder=" ">
+            <label>Password</label>
+            <span class="toggle-password" onclick="togglePassword('login-password', this)">
+                <ion-icon name="eye-outline"></ion-icon>
+            </span>
+        </div>
+        <button onclick="loginUser()">Login</button>
+        <div class="links">
+            <a href="#" onclick="showForgotPassword()">Forgot Password?</a>
+            <span>|</span>
+            <a href="#" onclick="showRegister()">Register</a>
+        </div>
+    </div>
+
+    <div class="container-box" id="register-form">
+        <h2>Register</h2>
+        <div class="input-box">
+            <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+            <input type="text" id="register-name" required placeholder=" ">
+            <label>Full Name</label>
+        </div>
+        <div class="input-box">
+            <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+            <input type="email" id="register-email" required placeholder=" ">
+            <label>Email</label>
+        </div>
+        <div class="input-box">
+            <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+            <input type="password" id="register-password" required placeholder=" ">
+            <label>Password</label>
+            <span class="toggle-password" onclick="togglePassword('register-password', this)">
+                <ion-icon name="eye-outline"></ion-icon>
+            </span>
+        </div>
+        <button onclick="registerUser()">Register</button>
+        <div class="links">
+            <a href="#" onclick="showLogin()">Back to Login</a>
+        </div>
+    </div>
+
+    <div class="container-box" id="forget-form">
+        <h2>Forgot Password</h2>
+        <div class="input-box">
+            <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+            <input type="email" id="forgot-password" required placeholder=" ">
+            <label>Email</label>
+        </div>
+        <button onclick="resetPassword()">Reset Password</button>
+        <div class="links">
+            <a href="#" onclick="showLogin()">Back to Login</a>
+        </div>
+    </div>
+
+    <script>
+			function showLogin() {
+				document.getElementById("login-form").style.display = "block";
+				document.getElementById("register-form").style.display = "none";
+				document.getElementById("forget-form").style.display = "none";
+			}
+
+			function showRegister() {
+				document.getElementById("login-form").style.display = "none";
+				document.getElementById("register-form").style.display = "block";
+				document.getElementById("forget-form").style.display = "none";
+			}
+
+			function showForgotPassword() {
+				document.getElementById("login-form").style.display = "none";
+				document.getElementById("register-form").style.display = "none";
+				document.getElementById("forget-form").style.display = "block";
+			}
+
+			function loginUser() {
+				let username = document.getElementById("login-user").value;
+				let password = document.getElementById("login-password").value;
+
+				let storedName = localStorage.getItem("userName");
+				let storedPassword = localStorage.getItem("userPassword");
+				let storedEmail = localStorage.getItem("userEmail");
+				let storedImage = localStorage.getItem("userImage");
+
+				if (username === storedName && password === storedPassword) {
+					alert("Login successful! 🎉");
+
+					localStorage.setItem("currentUserName", storedName);
+					localStorage.setItem("currentUserEmail", storedEmail ?? "");
+					localStorage.setItem("currentUserImage", storedImage ?? "/image/default-user.png");
+
+					window.location.href = "Home.html";
+				} else {
+					alert("Invalid credentials. Try again! ❌");
+				}
+			}
+
+			function registerUser() {
+				let name = document.getElementById("register-name").value;
+				let email = document.getElementById("register-email").value;
+				let password = document.getElementById("register-password").value;
+
+				if (name && email && password) {
+					localStorage.setItem("userName", name);
+					localStorage.setItem("userEmail", email);
+					localStorage.setItem("userPassword", password);
+					localStorage.setItem("userImage", "/image/default-user.png");
+
+					alert("Registration successful! ✅");
+					showLogin();
+				} else {
+					alert("Please fill out all fields.");
+				}
+			}
+
+			function resetPassword() {
+				let email = document.getElementById("forgot-email").value;
+
+				if (email) {
+					alert(`Password reset link sent to ${email} 📩`);
+
+					showLogin();
+				} else {
+					alert("Enter your email to reset password.");
+				}
+			}
+
+			window.onload = function () {
+				const name = localStorage.getItem("currentUserName");
+				const email = localStorage.getItem("currentUserEmail");
+
+				if (name && email) {
+					showUserProfile(name, email);
+				}
+			};
+
+			function showUserProfile(name, email) {
+				document.getElementById("profileName").textContent = "Name: " + name;
+				document.getElementById("profileEmail").textContent = "Email: " + email;
+			}
+		</script>
+
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</html>

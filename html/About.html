@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>About Our Page</title>
+		<link
+			rel="stylesheet"
+			href="/css/About.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Courgette&display=swap"
+			rel="stylesheet" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Courgette&family=Poiret+One&display=swap"
+			rel="stylesheet" />
+	</head>
+
+	<body>
+		<nav class="navbar">
+			<div class="first-section">
+				<div class="logo">
+					<img
+						class="logo-img"
+						src="/Logo/Asia-logo.png"
+						alt="Logo" />
+				</div>
+
+				<div
+					class="hamburger"
+					onclick="toggleMenu()">
+					&#9776;
+				</div>
+
+				<ul
+					class="menu"
+					id="menu">
+					<li><a href="Home.html">Home</a></li>
+					<li><a href="About.html">About</a></li>
+					<li><a href="Home.html#Contact">Contact</a></li>
+				</ul>
+			</div>
+
+			<div
+				class="profile-section"
+				id="profileSection">
+				<img
+					src="/image/default-profile.png"
+					alt="Profile"
+					class="profile-pic"
+					onclick="toggleProfileMenu()" />
+				<div
+					class="profile-menu"
+					id="profileMenu">
+					<p id="profileName">Name: John Doe</p>
+					<p id="profileEmail">Email: johndoe@example.com</p>
+					<a
+						href="#"
+						onclick="logout()"
+						>Logout</a
+					>
+				</div>
+			</div>
+
+			<div class="search-container">
+				<input
+					type="text"
+					id="searchQuery"
+					placeholder="Search for a place..."
+					class="search-input" />
+				<span
+					class="search_bt"
+					onclick="searchPage()">
+					<i class="fas fa-search"></i>
+				</span>
+			</div>
+		</nav>
+
+		<div class="title">
+			<h3>"A journey of a thousand miles begins with a single step"</h3>
+		</div>
+
+		<div class="Big-container">
+			<ul class="container">
+				<li>
+					<img
+						src="/image/China1.png"
+						alt="China" />
+					<div class="content">
+						<span>
+							<h2>China</h2>
+							<p>“A land where history whispers through ancient walls and innovation shapes the future.”</p>
+						</span>
+					</div>
+				</li>
+				<li>
+					<img
+						src="/image/Indonesia1.png"
+						alt="Indonesia" />
+					<div class="content">
+						<span>
+							<h2>Indonesia</h2>
+							<p>“An archipelago of wonders, where nature, culture, and adventure collide.”</p>
+						</span>
+					</div>
+				</li>
+				<li>
+					<img
+						src="/image/Japan1.png"
+						alt="Japan" />
+					<div class="content">
+						<span>
+							<h2>Japan</h2>
+							<p>“Where ancient traditions and futuristic wonders exist in perfect harmony.”</p>
+						</span>
+					</div>
+				</li>
+				<li>
+					<img
+						src="/image/Maldive1.png"
+						alt="Maldives" />
+					<div class="content">
+						<span>
+							<h2>Maldive</h2>
+							<p>“Where the sky meets the sea, and time slows to the rhythm of the waves.”</p>
+						</span>
+					</div>
+				</li>
+				<li>
+					<img
+						src="/image/Philippines1.png"
+						alt="Philippines" />
+					<div class="content">
+						<span>
+							<h2>Philippines</h2>
+							<p>“Where every island holds a new adventure and every sunset feels like home.”</p>
+						</span>
+					</div>
+				</li>
+				<li>
+					<img
+						src="/image/Qatar1.png"
+						alt="Qatar" />
+					<div class="content">
+						<span>
+							<h2>Qatar</h2>
+							<p>“A jewel of the Gulf, where culture, luxury, and tradition shine together.”</p>
+						</span>
+					</div>
+				</li>
+				<li>
+					<img
+						src="/image/Thailand1.png"
+						alt="Thailand" />
+					<div class="content">
+						<span>
+							<h2>Thailand</h2>
+							<p>“The Land of Smiles, where golden temples and tropical shores welcome every soul.”</p>
+						</span>
+					</div>
+				</li>
+				<li>
+					<img
+						src="/image/Saudiarabia1.png"
+						alt="Saudi Arabia" />
+					<div class="content">
+						<span>
+							<h2>Saudi Arabia</h2>
+							<p>“Where timeless architecture stands beside futuristic marvels, bridging history and innovation.”</p>
+						</span>
+					</div>
+				</li>
+				<li>
+					<img
+						src="/image/Singapore1.png"
+						alt="Singapore" />
+					<div class="content">
+						<span>
+							<h2>Singapore</h2>
+							<p>“A garden city where cultures blend, and the skyline touches the stars.”</p>
+						</span>
+					</div>
+				</li>
+				<li>
+					<img
+						src="/image/Unitedarabemirates1.png"
+						alt="UAE" />
+					<div class="content">
+						<span>
+							<h2>United Arab Emirates</h2>
+							<p>“A masterpiece of ambition rising from the desert to touch the clouds.”</p>
+						</span>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<script>
+			function toggleMenu() {
+				const menu = document.getElementById("menu");
+				menu.classList.toggle("show");
+			}
+
+			function searchPage() {
+				const query = document.getElementById("searchQuery").value.trim();
+				if (query) {
+					alert("Search for: " + query);
+				}
+			}
+
+			function toggleProfileMenu() {
+				const menu = document.getElementById("profileMenu");
+				menu.style.display = menu.style.display === "block" ? "none" : "block";
+			}
+
+			function showUserProfile(name, email, imageSrc) {
+				document.getElementById("profileName").textContent = "Name: " + name;
+				document.getElementById("profileEmail").textContent = "Email: " + email;
+				const profilePic = document.querySelector(".profile-pic");
+				profilePic.src = imageSrc;
+				document.getElementById("profileSection").style.display = "inline-block";
+			}
+
+			function logout() {
+				localStorage.removeItem("userName");
+				localStorage.removeItem("userEmail");
+				localStorage.removeItem("userImage");
+				alert("You have been logged out.");
+				window.location.href = "login.html";
+			}
+
+			window.onload = function () {
+				const name = localStorage.getItem("userName");
+				const email = localStorage.getItem("userEmail");
+				const image = localStorage.getItem("userImage") || "/image/default-profile.png";
+
+				if (name && email) {
+					showUserProfile(name, email, image);
+				} else {
+					document.getElementById("profileSection").style.display = "none";
+				}
+			};
+		</script>
+		<script src="/js/home-about.js"></script>
+	</body>
+</html>
